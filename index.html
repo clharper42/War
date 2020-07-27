@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>War</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="pile">
+            <div class="discript">
+                <h1>PLAYER ONE</h1>
+            </div>
+            <div class="backCont">
+                <img src="assests/backofcard.png" alt="">
+            </div>
+            <div class="discript">
+                <h2 id="p1CardCount">26 CARDS</h2>
+            </div>
+        </div>
+        <div class="battlefield">
+            <div class="drawn">
+                <img id="p1IMG" src="https://deckofcardsapi.com/static/img/AS.png" alt="">
+            </div>
+            <div class="drawn">
+                <img id="p2IMG" src="https://deckofcardsapi.com/static/img/AS.png" alt="">
+            </div>
+            <div class="actions">
+                <div class="info">
+                    <h1 id="currentInfo">CLICK NEXT TO START GAME</h1>
+                </div>
+                <div class="btn">
+                    <button id="actionBTN" class="btnNext" onclick="drawFromPile()">NEXT</button>
+                </div>
+                <div class="btn">
+                    <button class="btnNew" onclick="pageReload()">NEW GAME</button>
+                </div>
+            </div>
+        </div>
+        <div class="pile">
+            <div class="discript">
+                <h1>PLAYER TWO</h1>
+            </div>
+            <div class="backCont">
+                <img src="assests/backofcard.png" alt="">
+            </div>
+            <div class="discript">
+                <h2 id="p2CardCount">26 CARDS</h2>
+            </div>
+        </div>
+        <div class="warZone">
+            <div class="discript">
+                <h1>WAR ZONE</h1>
+            </div>
+            <div class="backCont">
+                <img src="assests/backofcard.png" alt="">
+            </div>
+            <div class="discript">
+                <h2 id="p1WarCount">0 CARDS</h2>
+            </div>
+        </div>
+        <div class="warZone">
+            <div class="discript">
+                <h1>WAR ZONE</h1>
+            </div>
+            <div class="backCont">
+                <img src="assests/backofcard.png" alt="">
+            </div>
+            <div class="discript">
+                <h2 id="p2WarCount">0 CARDS</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
